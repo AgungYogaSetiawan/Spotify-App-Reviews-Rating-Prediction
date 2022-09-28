@@ -7,7 +7,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import streamlit as st
 import json
-import nltk 
+import nltkmodules # from nltkmodules.py 
 import re
 import spacy
 import string
