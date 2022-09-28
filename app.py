@@ -7,7 +7,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import streamlit as st
 import json
-import nltkmodules # from nltkmodules.py 
+import nltk # from nltkmodules.py 
 import re
 import spacy
 import string
@@ -22,7 +22,7 @@ from nltk.stem.porter import *
 from nltk.stem import WordNetLemmatizer
 from nltk.corpus import wordnet 
 from wordcloud import WordCloud, STOPWORDS
-# nltk.download('stopwords')
+nltk.download('stopwords')
 
 
 nlp = spacy.load('en_core_web_sm')
@@ -134,7 +134,7 @@ def translate_scrape(target_lang='en'):
 
 # Main Menu Web
 st.write("""
-## Spotify Reviews Scraping & Prediction Rating Web App
+## :speech_balloon: Spotify Reviews Scraping & Prediction Rating Web App
 
 Web App ini bertujuan untuk memprediksi rating dari ulasan hasil dari scraping google play store pada halaman ulasan Aplikasi Spotify.
 """)
